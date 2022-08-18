@@ -1,0 +1,101 @@
+
+#my-canvas {
+  background-image: url(image/n-logo.png);
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  animation-name: snow-falling;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes snow-falling {
+  0% {
+    background-position: 0px -50px;
+  }
+
+  5% {
+    background-position: 10px 0px;
+  }
+
+  10% {
+    background-position: 20px 50px;
+  }
+
+  15% {
+    background-position: 10px 100px;
+  }
+
+  20% {
+    background-position: 0px 150px;
+  }
+
+  25% {
+    background-position: 10px 200px;
+  }
+
+  30% {
+    background-position: 20px 250px;
+  }
+
+  35% {
+    background-position: 1px 300px;
+  }
+
+  40% {
+    background-position: 0px 350px;
+  }
+
+  45% {
+    background-position: 10px 400px;
+  }
+
+  50% {
+    background-position: 20px 450px;
+  }
+
+  52% {
+    background-position: 758px 450px;
+  }
+
+  55% {
+    background-position: 768px 400px;
+  }
+
+  60% {
+    background-position: 758px 350px;
+  }
+
+  65% {
+    background-position: 748px 300px;
+  }
+
+  70% {
+    background-position: 758px 250px;
+  }
+
+  75% {
+    background-position: 768px 200px;
+  }
+
+  80% {
+    background-position: 758px 150px;
+  }
+
+  85% {
+    background-position: 748px 100px;
+  }
+
+  90% {
+    background-position: 758px 50px;
+  }
+
+  95% {
+    background-position: 768px 0px;
+  }
+
+  100% {
+    background-position: 758px -50px;
+  }
+
+}
