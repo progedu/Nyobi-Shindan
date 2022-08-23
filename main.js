@@ -32,12 +32,13 @@ ctx.canvas.addEventListener('click', e => {
   // 当たり判定を行う
   for (let box of game.boxes) {
     if (box.x <= cX && cX <= (box.x + box.w) && box.y <= cY && cY <= (box.y + box.h)) {
+      
       switch(game.mode) {
         case 'start':
           // 効果音
           resultBgm();
           // 質問ページに遷移する
-          game.mode = 'question'
+          game.mode  = 'question'
           game.boxes = drawQuestion(ctx, game.q, game.questionNum, cX, cY);
           return;
 
@@ -62,6 +63,7 @@ ctx.canvas.addEventListener('click', e => {
             drawAnswer(ctx, answers[nextId - 1000]);
 
           }
+
           return;
       }
     }

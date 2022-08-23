@@ -38,8 +38,9 @@ function drawQuestion(ctx, q, qNum, mX = 0, mY = 0) {
 
 function drawAnswer(ctx, a) {
   ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-  
+
   drawTitle(ctx, a.title); // タイトルの描画
+  drawDescription(ctx, a.description); // 説明の描画
 }
 
 function drawTitle(ctx, title, qNum = 0) {
@@ -140,6 +141,20 @@ function drawChoices(ctx, choices, mX, mY) {
   }
 
   return boxes;
+}
+
+// 説明の描画
+function drawDescription(ctx, description) {
+  // 説明文を書く
+  ctx.font = "bold 18px Arial, meiryo, sans-serif";
+  const texts    = description.split('\n');
+  const txtWidth = getTextsWidth(ctx, texts);
+  const drawX = (ctx.canvas.width - txtWidth) / 2;
+  let drawY = 140;
+  for (let text of texts) {
+    ctx.fillText(text, drawX, drawY);
+    drawY += 27;
+  }
 }
 
 
