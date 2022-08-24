@@ -1,55 +1,81 @@
 const questions = [
   {
     id: 0,
-    title: 'aとbはどちらが好きですか？\n長い文章テスト',
+    title: '何に興味がありますか？\n大学受験\nプログラミング\nクリエイティブ',
     choices: [
-      { text: 'aが好き', goes: [1] },
-      { text: 'bが好き', goes: [2] }
+      { text: '大学受験', goes: [1] },
+      { text: 'プログラミング', goes: [4] },
+      { text: 'クリエイティブ', goes: [6] }
     ]
   },
   {
     id: 1,
-    title: '数学と英語はどちらが好きですか？',
+    title: 'インプット型ですか？\nアウトプット型ですか？',
     choices: [
-      { text: '数学が好き', goes: [4] },
-      { text: '英語が好き', goes: [5] }
+      { text: 'インプット型で', goes: [2] },
+      { text: 'アウトプット型', goes: [3] }
     ]
   },
   {
     id: 2,
-    title: 'プログラミングは好きですか？',
+    title: 'どれからやる？',
     choices: [
-      { text: '好き', goes: [3] },
-      { text: '嫌い', goes: [1002] }
+      { text: 'ライブ授業', goes: [1002] },
+      { text: '参考書', goes: [1003] },
+      { text: '解説動画', goes: [1004] }
     ]
   },
   {
     id: 3,
-    title: 'プログラミング経験はどのくらい？',
+    title: 'どれからやる？',
     choices: [
-      { text: '初めて', goes: [1003] },
-      { text: 'やったことある', goes: [1004] },
-      { text: 'プログラマとして働いていた', goes: [1005] }
+      { text: '問題集', goes: [1000] },
+      { text: '習熟度テスト', goes: [1001] }
     ]
   },
   {
     id: 4,
-    title: '数学の何に興味がある？',
+    title: 'プログラミング経験はどのくらい？',
     choices: [
-      { text: '線形代数', goes: [1006] },
-      { text: '微積', goes: [1007] },
-      { text: '統計', goes: [1008] },
-      { text: '量子力学', goes: [1009] }
+      { text: 'はじめて', goes: [1005] },
+      { text: 'チョットできる', goes: [5, 1005] },
+      { text: '開発経験あり', goes: [5] },
+      { text: '超ベテラン', goes: [1009] }
     ]
   },
   {
     id: 5,
-    title: '質問文だよーーーーー\nこれは質問文です。',
+    title: '何に興味がありますか？',
     choices: [
-      { text: 'A', goes: [1010] },
-      { text: 'B', goes: [1011] },
-      { text: 'C', goes: [1012] },
-      { text: 'D', goes: [1013] }
+      { text: 'Webページ', goes: [1005] },
+      { text: 'スマートフォン', goes: [1006] },
+      { text: 'ゲーム', goes: [1007] },
+      { text: '機械学習・AI', goes: [1008] }
+    ]
+  },
+  {
+    id: 6,
+    title: '何に興味がありますか？',
+    choices: [
+      { text: 'グラフィック', goes: [7] },
+      { text: '映像', goes: [8] }
+    ]
+  },
+  {
+    id: 7,
+    title: '？？質問文？？',
+    choices: [
+      { text: 'グラフィックデザイン', goes: [1010] },
+      { text: 'HTML・CSSデザイン', goes: [1011] }
+    ]
+  },
+  {
+    id: 8,
+    title: '？？質問文？？',
+    choices: [
+      { text: 'PremierePro', goes: [1012] },
+      { text: 'AfterEffects', goes: [1013] },
+      { text: '動画撮影', goes: [1014] }
     ]
   }
 ];
