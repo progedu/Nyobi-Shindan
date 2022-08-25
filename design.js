@@ -39,6 +39,11 @@ function drawQuestion(ctx, q, qNum, mX = 0, mY = 0) {
 function drawAnswer(ctx, a) {
   ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
+  ctx.font = "bold 22px Arial, meiryo, sans-serif";
+  const textWidth = getTextsWidth(ctx, [`あなたにオススメのコースは！`]);
+  const textX     = (ctx.canvas.width - textWidth) / 2;
+  ctx.fillText(`あなたにオススメのコースは！`, textX, 28);
+
   drawTitle(ctx, a.title); // タイトルの描画
   drawDescription(ctx, a.description); // 説明の描画
 }
