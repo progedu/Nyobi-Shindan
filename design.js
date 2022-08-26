@@ -131,10 +131,24 @@ function drawChoices(ctx, choices, mX, mY) {
     }
 
     // 選択肢のテキスト
-    let txtWidth = ctx.measureText(choice.text).width;
-    ctx.font = "bold 24px Arial, meiryo, sans-serif";
+    ctx.font      = "bold 23px Arial, meiryo, sans-serif";
     ctx.fillStyle = 'rgb(33, 33, 33)';
-    ctx.fillText(choice.text, drawX + (choiceBoxWidth - txtWidth)/2, drawY + 30);
+    const texts    = choice.text.split('\n');
+    const txtWidth = getTextsWidth(ctx, texts);
+    let textX = drawX + (choiceBoxWidth - txtWidth)/2;
+    let textY = drawY + 63;
+    if (texts.length === 2) {
+      textY = drawY + 49;
+    } else if (texts.length === 3) {
+      textY = drawY + 36;
+    } else {
+      textY = drawY + 10
+    }
+    
+    for (let text of texts) {
+      ctx.fillText(text, textX, textY);
+      textY += 29;
+    }
 
     // 更新
     if (i % 2 === 0) {
