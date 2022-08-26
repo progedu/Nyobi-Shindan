@@ -46,6 +46,7 @@ function drawAnswer(ctx, a) {
 
   drawTitle(ctx, a.title); // タイトルの描画
   drawDescription(ctx, a.description); // 説明の描画
+  createTweetButton(`あなたにオススメのN予備校のコースは\n${a.title}\nです。`)
 }
 
 function drawTitle(ctx, title, qNum = 0) {
@@ -141,10 +142,10 @@ function drawChoices(ctx, choices, mX, mY) {
       textY = drawY + 49;
     } else if (texts.length === 3) {
       textY = drawY + 36;
-    } else {
-      textY = drawY + 10
+    } else if (texts.length >= 4) {
+      textY = drawY + 20
     }
-    
+
     for (let text of texts) {
       ctx.fillText(text, textX, textY);
       textY += 29;
@@ -198,6 +199,22 @@ function changeBgm(volume = 0.2) {
   changeBgm.play();
 }
 
+/* ツイートボタンの作成 */
+function createTweetButton(text) {
+  const tweetDivided = document.getElementById('tweet-area');
+  tweetDivided.innerText = '';
+  const anchor = document.createElement('a');
+  const hrefValue = 'https://twitter.com/intent/tweet?button_hashtag=N予備校診断';
+  anchor.setAttribute('href', hrefValue);
+  anchor.setAttribute('class', 'twitter-hashtag-button');
+  anchor.setAttribute('data-text', text + '\nhttps://progedu.github.io/Nyobi-Shindan/\n');
+  tweetDivided.appendChild(anchor);
+
+  // widgets.js の設定
+  const script = document.createElement('script');
+  script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+  tweetDivided.appendChild(script);
+}
 
 
 /**
