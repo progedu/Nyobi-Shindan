@@ -64,14 +64,14 @@ function drawTitle(ctx, title, qNum = 0) {
   }
 
   // 問題文もしくは結果を書く
-  ctx.font = "bold 24px Arial, meiryo, sans-serif";
+  ctx.font = "bold 23px Arial, meiryo, sans-serif";
   const texts    = title.split('\n');
   const txtWidth = getTextsWidth(ctx, texts);
   const drawX = (ctx.canvas.width - txtWidth) / 2;
   let drawY = 70;
   for (let text of texts) {
     ctx.fillText(text, drawX, drawY);
-    drawY += 32;
+    drawY += 29;
   }
 }
 

@@ -59,7 +59,7 @@ const answers = [
   {
     id: 1011,
     title: 'HTML・CSSデザイン',
-    description: 'コーデイングに必要不可欠なHTMLとCSS、\nレスポンシブウェブデザインやポップアップ表示など\n動的なWebサイトを作るために必要な\nJavaScriptについて学習できるコースです。\n\n制作現場でよく使われている高機能エディタ「Visual Studio Code」を使い、\n効率よくコーディングをするためのコツも伝授します。'
+    description: 'コーデイングに必要不可欠なHTMLとCSS、\nレスポンシブウェブデザインやポップアップ表示など\n動きのあるWebサイトを作るために必要な\nJavaScriptについて学習できるコースです。\n\n制作現場でよく使われている高機能エディタ「Visual Studio Code」を使い、\n効率よくコーディングをするためのコツも伝授します。'
   },
   {
     id: 1012,
