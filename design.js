@@ -44,7 +44,16 @@ function drawAnswer(ctx, a) {
   const textX     = (ctx.canvas.width - textWidth) / 2;
   ctx.fillText(`あなたにオススメのコースは！`, textX, 28);
 
-  drawTitle(ctx, a.title); // タイトルの描画
+  // タイトルの描画
+  ctx.font = "bold 24px Arial, meiryo, sans-serif";
+  const texts    = a.title.split('\n');
+  const txtWidth = getTextsWidth(ctx, texts);
+  const drawX = (ctx.canvas.width - txtWidth) / 2;
+  let drawY = 76;
+  for (let text of texts) {
+    ctx.fillText(text, drawX, drawY);
+    drawY += 29;
+  }
   drawDescription(ctx, a.description); // 説明の描画
   createTweetButton(`あなたにオススメのN予備校のコースは\n${a.title}\nです。`)
 }
