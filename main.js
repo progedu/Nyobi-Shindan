@@ -25,7 +25,12 @@ ctx.canvas.addEventListener('mousemove', e => {
   }
 });
 
-ctx.canvas.addEventListener('click', e => {
+// PC
+ctx.canvas.addEventListener('click',      clickOrTouch, false);
+// スマホ
+ctx.canvas.addEventListener('touchstart', clickOrTouch, false);
+
+function clickOrTouch(e) {
   let cX = e.clientX; // x座標
   let cY = e.clientY; // y座標
 
@@ -68,4 +73,4 @@ ctx.canvas.addEventListener('click', e => {
       }
     }
   }
-});
+}
