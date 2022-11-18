@@ -31,8 +31,8 @@ ctx.canvas.addEventListener('click',      clickOrTouch, false);
 ctx.canvas.addEventListener('touchstart', clickOrTouch, false);
 
 function clickOrTouch(e) {
-  let cX = e.clientX; // x座標
-  let cY = e.clientY; // y座標
+  let cX = e.offsetX; // x座標
+  let cY = e.offsetY; // y座標
 
   // 当たり判定を行う
   for (let box of game.boxes) {
