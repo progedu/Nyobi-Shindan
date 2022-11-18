@@ -20,10 +20,10 @@ ctx.canvas.addEventListener('mousemove', e => {
       game.boxes = drawIntroPage(ctx, mX, mY);
       return;
     case 'question':
-      drawQuestion(ctx, game.q, game.questionNum, mX, mY);
+      game.boxes = drawQuestion(ctx, game.q, game.questionNum, mX, mY);
       return;
   }
-});
+}, false);
 
 // PC
 ctx.canvas.addEventListener('click',      clickOrTouch, false);
