@@ -17,7 +17,7 @@ ctx.canvas.addEventListener('mousemove', e => {
 
   switch(game.mode) {
     case 'start':
-      drawIntroPage(ctx, mX, mY);
+      game.boxes = drawIntroPage(ctx, mX, mY);
       return;
     case 'question':
       drawQuestion(ctx, game.q, game.questionNum, mX, mY);
