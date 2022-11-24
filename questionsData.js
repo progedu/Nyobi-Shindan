@@ -57,52 +57,54 @@ const questions = [
     ]
   },
 
-
-
-
   {
     id: 7,
-    title: 'プログラミング経験はどのくらい？',
+    title: 'お金があったら Twitter を買収する？',
     choices: [
-      { text: 'はじめて', goes: [1005] },
-      { text: 'チョットできる', goes: [5, 1005] },
-      { text: '開発経験あり', goes: [5] },
-      { text: '超ベテラン', goes: [1009] }
+      { text: 'しない', goes: [8] },
+      { text: 'する',  goes:  [9] }
     ]
   },
   {
     id: 8,
-    title: '何に興味がありますか？',
+    title: '没頭すると時間忘れる？',
     choices: [
-      { text: 'Webページ', goes: [1005] },
-      { text: 'スマートフォン', goes: [1006] },
-      { text: 'ゲーム', goes: [1007] },
-      { text: '機械学習・AI', goes: [1008] }
+      { text: 'ない', goes: [10] },
+      { text: 'ある', goes: [11] }
     ]
   },
   {
     id: 9,
-    title: '何に興味がありますか？',
+    title: 'タイムスリップしたいですか？',
     choices: [
-      { text: 'グラフィック', goes: [7] },
-      { text: '映像', goes: [8] }
+      { text: 'しない', goes: [11] },
+      { text: 'する', goes: [12] }
     ]
   },
   {
     id: 10,
-    title: '？？質問文？？',
+    title: 'マクドナルドで頼むなら？',
     choices: [
-      { text: 'グラフィックデザイン', goes: [1010] },
-      { text: 'HTML・CSSデザイン', goes: [1011] }
+      { text: 'ビックマック',  goes: [1005] },
+      { text: '月見バーガー',  goes: [1006] },
+      { text: 'ハッピーセット', goes: [1007] }
     ]
   },
   {
     id: 11,
-    title: '？？質問文？？',
+    title: 'スマートフォンは新しい機種によく買い換えますか？',
     choices: [
-      { text: 'PremierePro', goes: [1012] },
-      { text: 'AfterEffects', goes: [1013] },
-      { text: '動画撮影', goes: [1014] }
+      { text: '買い換える',       goes: [1006] },
+      { text: 'ずっと同じ物を使う', goes: [1007] }
+    ]
+  },
+  {
+    id: 12,
+    title: '恋愛のアプローチをするなら？',
+    choices: [
+      { text: '友人を好きになる',   goes: [1006] },
+      { text: '本人に直接',       goes: [1007] },
+      { text: '外堀から埋めていく', goes: [1008] }
     ]
   }
 ];
