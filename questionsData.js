@@ -4,36 +4,64 @@ const questions = [
     title: '何に興味がありますか？\n・教科学習\n・プログラミング',
     choices: [
       { text: '大学受験や\n科目の復習に\n興味がある', goes: [1] },
-      { text: 'プログラミングに\n興味がある', goes: [4] },
+      { text: 'プログラミングに\n興味がある', goes: [7] },
     ]
   },
   {
     id: 1,
-    title: 'インプット型ですか？\nアウトプット型ですか？',
+    title: '忘れ物は多いですか？',
     choices: [
-      { text: 'インプット型で', goes: [2] },
-      { text: 'アウトプット型', goes: [3] }
+      { text: '多い',  goes: [2] },
+      { text: '少ない', goes: [3] }
     ]
   },
   {
     id: 2,
-    title: 'どれからやる？',
+    title: 'Webサイトで調べる？',
     choices: [
-      { text: 'ライブ授業', goes: [1002] },
-      { text: '参考書', goes: [1003] },
-      { text: '解説動画', goes: [1004] }
+      { text: '調べない', goes: [4] },
+      { text: '調べる',   goes: [5] }
     ]
   },
   {
     id: 3,
-    title: 'どれからやる？',
+    title: '説明書をよく読む',
     choices: [
-      { text: '問題集', goes: [1000] },
-      { text: '習熟度テスト', goes: [1001] }
+      { text: '読まない', goes: [5] },
+      { text: '読む',    goes: [6] }
     ]
   },
   {
     id: 4,
+    title: 'どれが好き？',
+    choices: [
+      { text: 'マンガ', goes: [1000] },
+      { text: 'アニメ', goes: [1001] },
+      { text: '小説',   goes: [1003] }
+    ]
+  },
+  {
+    id: 5,
+    title: '音楽を聴くなら？',
+    choices: [
+      { text: 'ライブ', goes: [1002] },
+      { text: 'CD',    goes: [1004] }
+    ]
+  },
+  {
+    id: 6,
+    title: '映画は字幕で観るか、吹き替えで見るか？',
+    choices: [
+      { text: '字幕',    goes: [1003] },
+      { text: '吹き替え', goes: [1004] }
+    ]
+  },
+
+
+
+
+  {
+    id: 7,
     title: 'プログラミング経験はどのくらい？',
     choices: [
       { text: 'はじめて', goes: [1005] },
@@ -43,7 +71,7 @@ const questions = [
     ]
   },
   {
-    id: 5,
+    id: 8,
     title: '何に興味がありますか？',
     choices: [
       { text: 'Webページ', goes: [1005] },
@@ -53,7 +81,7 @@ const questions = [
     ]
   },
   {
-    id: 6,
+    id: 9,
     title: '何に興味がありますか？',
     choices: [
       { text: 'グラフィック', goes: [7] },
@@ -61,7 +89,7 @@ const questions = [
     ]
   },
   {
-    id: 7,
+    id: 10,
     title: '？？質問文？？',
     choices: [
       { text: 'グラフィックデザイン', goes: [1010] },
@@ -69,7 +97,7 @@ const questions = [
     ]
   },
   {
-    id: 8,
+    id: 11,
     title: '？？質問文？？',
     choices: [
       { text: 'PremierePro', goes: [1012] },
